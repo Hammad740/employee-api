@@ -7,7 +7,54 @@ const PORT = 3000;
 app.use(express.json());
 
 let employees = [
-  // ... your employees data
+  {
+    employee_id: 1,
+    first_name: 'Dewey',
+    last_name: 'Dello',
+    age: 34,
+    email: 'ddello0@live.com',
+    gender: 'Male',
+    job_title: 'Human Resources Assistant IV',
+    department: 'Accounting',
+    salary: 111749.17,
+    hire_date: '4/9/2014',
+  },
+  {
+    employee_id: 2,
+    first_name: 'Daryl',
+    last_name: 'Bale',
+    age: 58,
+    email: 'dbale1@slate.com',
+    gender: 'Male',
+    job_title: 'Research Associate',
+    department: 'Engineering',
+    salary: 123679.3,
+    hire_date: '11/28/2017',
+  },
+  {
+    employee_id: 3,
+    first_name: 'Trude',
+    last_name: 'Boatman',
+    age: 53,
+    email: 'tboatman2@wikipedia.org',
+    gender: 'Female',
+    job_title: 'Research Nurse',
+    department: 'Research and Development',
+    salary: 53623.39,
+    hire_date: '12/31/2012',
+  },
+  {
+    employee_id: 4,
+    first_name: 'Lock',
+    last_name: 'Westcarr',
+    age: 24,
+    email: 'lwestcarr3@bravesites.com',
+    gender: 'Male',
+    job_title: 'Research Associate',
+    department: 'Legal',
+    salary: 143120.13,
+    hire_date: '8/22/2011',
+  },
 ];
 
 // Swagger Configuration
