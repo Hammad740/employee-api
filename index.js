@@ -149,6 +149,13 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
  *               items:
  *                 $ref: '#/components/schemas/Employee'
  */
+
+// redirect to api docs page
+app.get('/', (req, res) => {
+  res.redirect('/api-docs');
+});
+
+// Get all employees
 app.get('/employees', (req, res) => {
   res.send(employees);
 });
